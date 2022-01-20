@@ -1,0 +1,159 @@
+html, body
+{
+    margin: 0;
+    height: 100%;
+}
+body
+{
+    padding-bottom: 200px;
+}
+h1
+{
+    text-align: center;
+}
+.bialy
+{
+    color: white;
+    display: inline-block;
+}
+.zolty
+{
+    color: #f2ec30;
+    display: inline-block;
+}
+nav
+{
+    grid-area: menu;
+}
+nav ul li a
+{
+    color: #f2ec30;
+    text-decoration: none;
+    font-size: x-large;
+    padding: 20px;
+}
+nav ul li
+{
+    list-style-type: none;
+    margin-bottom: 40px;
+    border: #f2ec30 4px solid;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100px;
+}
+nav ul li:hover
+{
+    background-color: black;
+}
+footer
+{
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #f2ec30;
+    width: 100%;
+    height: 100px;
+    font-size: x-large;
+}
+body img
+{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.art
+{
+    grid-area: art1;
+}
+.art2
+{
+    grid-area: art2; 
+}
+.art ul li
+{
+    display: flex;
+    align-items: center;
+}
+.art2 ul li
+{
+    display: flex;
+    align-items: center;
+}
+.art ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+}
+.art ul li::before
+{
+    content: url('planeta2.png');
+}
+.art ul li
+{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.coto
+{
+    font-size: x-large;
+    text-align: center;
+}
+.wesprzyj
+{
+    font-size: x-large;
+    text-align: center;
+}
+.body-macwrap
+{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "menu art1 art2"
+                         "menu art1 art2";
+    align-items: center;
+}
+.art2 ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+}
+.art2 ul li::before
+{
+    content: url('planeta2.png');
+}
+.art2 ul li
+{
+    margin-bottom: 40px;
+    text-align: center;
+}
+footer a 
+{
+    text-decoration: none;
+    color:black;
+}
+@media(max-width:750px)
+{
+    .body-macwrap
+    {
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "menu art1"
+                             "menu art2";
+    }
+    nav
+    {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    body
+{
+    padding-bottom: 400px;
+}
+}
